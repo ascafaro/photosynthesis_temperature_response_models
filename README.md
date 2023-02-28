@@ -1,5 +1,6 @@
 # photosynthesis temperature response models
 Models the response of net assimilation to rising leaf temperature
+
 System Requirements
 
 •	Any computer which can run R computer language and RStudio with no non-standard hardware required.
@@ -29,6 +30,10 @@ species: The genus and species name for which a temperature response curve was m
 growth_temp: The average day/light temperature (mean daily maximum temperature at which a species was grown) in °C.
 
 plant_functional_type: A description of which physiological type the species belongs to (herb/grass, temperate tree, shrub, needle-leaf tree, tropical tree, tropical montane tree).
+
+reference: The authors and year of publication
+
+doi: The Digital Object Identifier for the papers from which data was extracted
 
 temperature: The measured leaf temperature in °C.
 
