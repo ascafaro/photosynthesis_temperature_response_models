@@ -9,7 +9,7 @@ System Requirements
 
 Instructions for running code
 
-1. Download and save to a folder the model code file [[photosynthesis temperature respnse model](https://github.com/ascafaro/photosynthesis_temperature_response_models/blob/main/photosynthesis%20temperature%20response%20model.R)] and the linked data file 
+1. Download and save to a folder the model code file [[photosynthesis temperature respnse model](https://github.com/ascafaro/photosynthesis_temperature_response_models/blob/main/photosynthesis%20temperature%20response%20model.R)] and the linked data file [[photosynthesis temperature response curves](https://github.com/ascafaro/photosynthesis_temperature_response_models/blob/main/photosynthesis%20temperature%20response%20data.xlsx)]
 
 2. Double click the code which should open it in in RStudio
 3. Run the code.
@@ -17,7 +17,7 @@ Instructions for running code
       a) A pdf document that contains a graph and indices of the model fit for each photosynthesis temperature response curve present in the excel data  file.
       b) A csv spreadsheet with the model outputs listed for each temperature response curve.
 5. Delete examples and add measured temperature response curves to the data file. Make sure that a unique identifier number is placed in the “set” column for each individual temperature curve added. 
-6. If the data file is to be renamed please update the code to reflect the new data file mane by changing this line of code to the new name:
+6. If the data file is to be renamed please update the code to reflect the new data file mane by changing the following line of code to the new name: photosynthesis<-as.data.frame(read_excel("photosynthesis temperature response data.xlsx", col_names = TRUE, sheet = "photosynthesis"))
 
 
 Input data column descriptions
