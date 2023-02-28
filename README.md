@@ -16,7 +16,8 @@ Models the response of net assimilation to rising leaf temperature (manuscript i
 3. Run the code.
 4. The code will generate and save in the same folder: a) a pdf document named "model fit" that contains a graph and indices of the model fit for each photosynthesis temperature response curve present in the excel data  file; b) a csv spreadsheet with the model outputs listed for each temperature response curve.
 5. Delete examples and add measured temperature response curves to the data file. Make sure that a unique identifier number is placed in the “set” column for each individual temperature curve added. 
-6. If the data file is to be renamed please update the code to reflect the new data file mane by changing the following line of code to the new name: photosynthesis<-as.data.frame(read_excel("photosynthesis temperature response data.xlsx", col_names = TRUE, sheet = "photosynthesis"))
+6. If the data file is to be renamed please update the code to reflect the new data file mane by changing the following line of code to the new name: photosynthesis<-as.data.frame(read_excel("photosynthesis temperature response data.xlsx", col_names = TRUE, sheet = "photosynthesis")).
+7. Dowload and run time on a standard PC should be less than 10 seconds.
 
 
 <h2>Input data column descriptions</h2>
