@@ -1,27 +1,25 @@
 # photosynthesis temperature response models
 Models the response of net assimilation to rising leaf temperature (manuscript in preperation)
 
-System Requirements
+<h2>System Requirements</h2>
 
 •	Any computer which can run R computer language and RStudio.
 •	R computer language can be downloaded from https://cran.r-project.org/mirrors.html 
 •	Software was run using R version 4.1.2 (2021-11-01) and RStudio 2021.09.2.
 •	installed packages readxl (https://CRAN.R-project.org/package=readxl) and Metrics (https://CRAN.R-project.org/package=Metrics)
 
-Instructions for running code
+<h2>Instructions for running code</h2>
 
 1. Download and save to a folder the model code file [[photosynthesis temperature respnse model](https://github.com/ascafaro/photosynthesis_temperature_response_models/blob/main/photosynthesis%20temperature%20response%20model.R)] and the linked data file [[photosynthesis temperature response curves](https://github.com/ascafaro/photosynthesis_temperature_response_models/blob/main/photosynthesis%20temperature%20response%20data.xlsx)]
 
 2. Double click the code file. It should open in RStudio.
 3. Run the code.
-4. The code will generate and save in the same folder: 
-      a) A pdf document named "model fit" that contains a graph of the temperature respnse curve and indices of the model fit for each photosynthesis temperature response curve present in the excel data  file.
-      b) A csv spreadsheet with the model outputs listed for each temperature response curve.
+4. The code will generate and save in the same folder: a) a pdf document named "model fit" that contains a graph and indices of the model fit for each photosynthesis temperature response curve present in the excel data  file; b) a csv spreadsheet with the model outputs listed for each temperature response curve.
 5. Delete examples and add measured temperature response curves to the data file. Make sure that a unique identifier number is placed in the “set” column for each individual temperature curve added. 
 6. If the data file is to be renamed please update the code to reflect the new data file mane by changing the following line of code to the new name: photosynthesis<-as.data.frame(read_excel("photosynthesis temperature response data.xlsx", col_names = TRUE, sheet = "photosynthesis"))
 
 
-Input data column descriptions
+<h2>Input data column descriptions</h2>
 
 set: A unique number given to each set of data relating to an individual temperature response curve.
 
@@ -40,7 +38,7 @@ temperature: The measured leaf temperature in °C.
 photo: The measured net photosynthetic CO2 assimilation rate at a given temperature in µmol CO2 m-2 s-1.
 
 
-Model output column descriptions
+<h2>Model output column descriptions</h2>
 
 set: A unique number given to each set of data relating to an individual temperature response curve.
 
