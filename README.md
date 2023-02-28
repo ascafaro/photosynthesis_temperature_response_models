@@ -9,12 +9,14 @@ System Requirements
 
 Instructions for running code
 
-1.	Open RStudio and paste the code from the photosynthesis_temperature_response_models repository into the script editor and save as a .r file in a designated folder
-2.	In the same designated folder download and save from the repository the template photosynthesis temperature response data file named “”.
-3.	Run the code.
-4.	The code will generate and save in the same folder: 
-a)	a pdf document that contains a graph and indices of the model fit for each photosynthesis temperature response curve present in the excel data file
-b)	A csv spreadsheet with the model outputs listed for each temperature response curve.
+1.	Downlead and save to a folder:
+	    a) The model code file
+      b) The linked data file
+3.	Double click the code which should open it in in RStudio
+4.	Run the code.
+5.	The code will generate and save in the same folder: 
+      a)	a pdf document that contains a graph and indices of the model fit for each photosynthesis temperature response curve present in the excel data  file.
+      b)	A csv spreadsheet with the model outputs listed for each temperature response curve.
 5.	Delete examples and add measured temperature response curves to the data file. Make sure that a unique identifier number is placed in the “set” column for each individual temperature curve added. 
 6.	If the data file is to be renamed please update the code to reflect the new data file mane by changing this line of code to the new name:
 
