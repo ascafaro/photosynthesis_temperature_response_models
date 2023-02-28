@@ -1,4 +1,4 @@
-# photosynthesis_temperature_response_models
+# photosynthesis temperature response models
 Models the response of net assimilation to rising leaf temperature
 System Requirements
 
