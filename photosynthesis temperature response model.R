@@ -9,7 +9,7 @@ setwd(wd) # sets the working directory to the data and script folder
 #### The data used in analysis ###
 
 #photosynthesis temperature response curves and information about growth temperature
-photosynthesis<-as.data.frame(read_excel("example photosynthesis temperature response data.xlsx", col_names = TRUE, sheet = "photosynthesis"))
+photosynthesis<-as.data.frame(read_excel("photosynthesis temperature response data.xlsx", col_names = TRUE, sheet = "photosynthesis"))
 
 # assign cool or warm grown to each row of data based on growth temperature
 # daily mean maximum temperature of below 25°C (cool) or above 25°C (warm). 
